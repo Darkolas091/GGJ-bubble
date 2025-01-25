@@ -7,7 +7,7 @@ public class PressAnyKeyMenu : MonoBehaviour
 {
     public string sceneName; // The name of the scene to load
 
-    // Update method for detecting any key press
+    /// Update method for detecting any key press
     private void Update()
     {
         if (Input.anyKeyDown)
