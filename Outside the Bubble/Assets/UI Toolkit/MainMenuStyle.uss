@@ -33,3 +33,6 @@
     -unity-font-definition: url("project://database/Assets/vhs-gothic.ttf?fileID=12800000&guid=446813c04dee6c04fa6592c32685c4ef&type=3#vhs-gothic");
     color: rgb(0, 0, 0);
 }
+
+.script {
+}

@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Push_box_animation_0: -2489995406762454079
+      Push_box_animation_1: -8612245143466393182
+      Push_box_animation_2: 7141573182823725055
+      Push_box_animation_3: 7360976587570931259
+      Push_box_animation_4: -2723016866314890083
+      Push_box_animation_5: 7629121582919326997
+      Push_box_animation_6: -1897328150558176961
+      Push_box_animation_7: 5420380774250740206
+      Push_box_animation_8: -749031923763494490
+      Push_box_animation_9: 8146394231823355649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
