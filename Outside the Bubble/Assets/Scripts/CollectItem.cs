@@ -15,6 +15,7 @@ public class CollectItem : MonoBehaviour
         {
             PlayerPrefs.SetInt(thisObject.ID, PlayerPrefs.GetInt(thisObject.ID) + 1);
             Destroy(gameObject);
+            Debug.Log($"Collected {thisObject.ID}");
         }
     } 
 }
