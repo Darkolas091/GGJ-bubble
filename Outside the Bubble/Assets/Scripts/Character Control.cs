@@ -1,41 +1,47 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement2D : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    private Rigidbody2D body;
-    private bool grounded;
+    [Header("Movement Settings")]
+    public float moveSpeed = 5f;
+    public float jumpForce = 10f;
 
-    private void Awake()
+    [Header("Ground Check")]
+    public Transform groundCheck; // Empty GameObject to mark the ground check position
+    public float groundCheckRadius = 0.2f;
+    public LayerMask groundLayer; // Layer to identify the ground
+
+    private Rigidbody2D rb;
+    private bool isGrounded;
+
+    private void Start()
     {
-        body = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
+        // Handle horizontal movement
+        float horizontalInput = Input.GetAxis("Horizontal");
+        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
 
-        if (horizontal < 0.01f)
-            transform.localScale = new Vector3(1, 1, 1);
-        else if (horizontal < -0.01f)
-            transform.localScale = new Vector3(-1, 1, 1);
+        // Check if the player is grounded
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        if (Input.GetButtonDown("Jump") && grounded)
-            Jump();
+        // Handle jump
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
     }
 
-    private void Jump()
+    private void OnDrawGizmosSelected()
     {
-            body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
-            grounded = false;
+        // Draw the ground check circle in the Scene view
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-            grounded = true;
-    }
-
-
 }
