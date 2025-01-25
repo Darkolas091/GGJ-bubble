@@ -1,8 +1,8 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=a90fd3a8728fe204188ab961115e5cbd&amp;type=3#MainMenuStyle" />
-    <engine:VisualElement name="Container" style="flex-grow: 1;">
-        <engine:Label text="Main Menu" name="Header" class="header" />
-        <engine:Button text="New game" name="NewGame" class="button" style="background-color: rgb(188, 238, 204);" />
-        <engine:Button text="Exit game" name="ExitGame" class="button" style="background-color: rgb(188, 238, 204);" />
+    <engine:VisualElement name="Container" style="flex-grow: 1; width: 1920px; height: 1080px;">
+        <engine:Label text="Game Title" name="Header" class="header" style="background-position-x: center 0; font-size: 150px; color: rgb(128, 231, 121); -unity-font-style: normal; width: 1143px; left: 388.5px;" />
+        <engine:Button text="New game" name="NewGame" selectable="false" class="button" style="background-color: rgb(188, 238, 204); bottom: auto; top: 557.5px; width: 500px; height: 120px; font-size: 40px;" />
+        <engine:Button text="Exit game" name="ExitGame" selectable="true" class="button" style="background-color: rgb(188, 238, 204); top: 607.5px; width: 500px; height: 120px; opacity: 1; font-size: 40px;" />
     </engine:VisualElement>
 </engine:UXML>
