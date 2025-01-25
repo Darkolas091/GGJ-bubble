@@ -4,5 +4,6 @@
         <engine:Label text="Main Menu" name="Header" class="header" />
         <engine:Button text="New game" name="NewGame" class="button" style="background-color: rgb(188, 238, 204);" />
         <engine:Button text="Exit game" name="ExitGame" class="button" style="background-color: rgb(188, 238, 204);" />
+        <engine:Button text="Button" class="button" />
     </engine:VisualElement>
 </engine:UXML>
