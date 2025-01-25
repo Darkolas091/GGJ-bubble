@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Plant_animation_0: 72569118738799374
+      Plant_animation_1: 437407875388134271
+      Plant_animation_10: -1741714371013838633
+      Plant_animation_11: 3652747140529520668
+      Plant_animation_12: 2558868157907085423
+      Plant_animation_13: -4254943996076387169
+      Plant_animation_14: 1643384231319612637
+      Plant_animation_15: 9040141612264358953
+      Plant_animation_2: -3369992935849761504
+      Plant_animation_3: 1514259220307091861
+      Plant_animation_4: -4034561480600542445
+      Plant_animation_5: -778279045182886081
+      Plant_animation_6: 958190229339952401
+      Plant_animation_7: 878026689314476233
+      Plant_animation_8: -7254998219103656338
+      Plant_animation_9: 4020219867040053491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
