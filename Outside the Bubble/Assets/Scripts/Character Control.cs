@@ -8,11 +8,18 @@ public class PlayerMovement2D : MonoBehaviour
 
     [Header("Ground Check")]
     public Transform groundCheck; // Empty GameObject to mark the ground check position
-    public float groundCheckRadius = 0.2f;
+    public Vector2 groundCheckSize = new Vector2(0.4f, 0.2f); // Size of the ground check box
     public LayerMask groundLayer; // Layer to identify the ground
+    public LayerMask platformLayer;
+
+    [Header("Wall Check")]
+    public Transform wallCheck; // Empty GameObject to mark the wall check position
+    public Vector2 wallCheckSize = new Vector2(0.2f, 0.4f); // Size of the wall check box
+    public LayerMask wallLayer; // Layer to identify walls
 
     private Rigidbody2D rb;
     private bool isGrounded;
+    private bool isTouchingWall;
 
     private void Start()
     {
@@ -23,10 +30,22 @@ public class PlayerMovement2D : MonoBehaviour
     {
         // Handle horizontal movement
         float horizontalInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+
+        // Check if touching a wall
+        isTouchingWall = Physics2D.OverlapBox(wallCheck.position, wallCheckSize, 0f, wallLayer);
+
+        // Prevent sticking to the wall
+        if (!isTouchingWall || isGrounded)
+        {
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        }
+
+        // Debug log for wall detection
+        Debug.Log($"Touching Wall: {isTouchingWall}");
 
         // Check if the player is grounded
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer) ||
+                     Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, platformLayer);
 
         // Handle jump
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -37,11 +56,18 @@ public class PlayerMovement2D : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        // Draw the ground check circle in the Scene view
+        // Draw the ground check box in the Scene view
         if (groundCheck != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
+        }
+
+        // Draw the wall check box in the Scene view
+        if (wallCheck != null)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireCube(wallCheck.position, wallCheckSize);
         }
     }
 }
