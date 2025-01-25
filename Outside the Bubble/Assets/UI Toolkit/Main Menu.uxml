@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=a90fd3a8728fe204188ab961115e5cbd&amp;type=3#MainMenuStyle" />
     <engine:VisualElement name="Container" style="flex-grow: 1;">
         <engine:Label text="Main Menu" name="Header" class="header" />
-        <engine:Button text="New Game" class="button" />
-        <engine:Button text="Exit" class="button" />
+        <engine:Button text="New game" class="button" style="background-color: rgb(188, 238, 204);" />
+        <engine:Button text="Exit game" class="button" style="background-color: rgb(188, 238, 204);" />
     </engine:VisualElement>
 </engine:UXML>

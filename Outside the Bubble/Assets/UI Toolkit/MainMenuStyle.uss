@@ -1,6 +1,8 @@
 .header {
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/vhs-gothic.ttf?fileID=12800000&guid=446813c04dee6c04fa6592c32685c4ef&type=3#vhs-gothic");
+    -unity-text-align: upper-center;
 }
 
 .button {
@@ -12,5 +14,22 @@
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     align-self: center;
-    background-image: url("project://database/Assets/Pixel%20art%20Menu%20package%20(5%20sets)/fancy%20metal/border.png?fileID=21300000&guid=fb4a12af3b204a5459da286a3a46b09f&type=3#border");
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-left: 78;
+    -unity-slice-top: 61;
+    -unity-slice-scale: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-size: 300px 600%;
+    background-position-x: center 130px;
+    background-position-y: center 0;
+    -unity-slice-right: 42;
+    -unity-slice-bottom: 57;
+    background-repeat: no-repeat no-repeat;
+    background-image: url("project://database/Assets/Pixel%20art%20Menu%20package%20(5%20sets)/metal/metal%20border.png?fileID=21300000&guid=0ece73ca3b0d0a0419d3a6c964981690&type=3#metal border");
+    -unity-background-image-tint-color: rgb(177, 245, 178);
+    -unity-font-definition: url("project://database/Assets/vhs-gothic.ttf?fileID=12800000&guid=446813c04dee6c04fa6592c32685c4ef&type=3#vhs-gothic");
+    color: rgb(0, 0, 0);
 }
