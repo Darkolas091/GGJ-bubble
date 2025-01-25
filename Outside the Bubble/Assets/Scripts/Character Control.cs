@@ -2,53 +2,40 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float horizontal; // Stores horizontal input
-    private float speed = 8f; // Movement speed
-    private float jumpingPower = 16f; // Jumping power
-    private bool isFacingRight = true; // Tracks facing direction
+    [SerializeField] private float speed;
+    private Rigidbody2D body;
+    private bool grounded;
 
-    [SerializeField] private Rigidbody2D rb; // Rigidbody component for physics
-    [SerializeField] private Transform groundCheck; // Position to check if grounded
-    [SerializeField] private LayerMask groundLayer; // Layer for ground detection
-
-    void Update()
+    private void Awake()
     {
-        horizontal = Input.GetAxisRaw("Horizontal"); // Get horizontal input
-
-        // Jump if grounded
-        if (Input.GetButtonDown("Jump") && IsGrounded())
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower); // Apply jump force
-        }
-
-        //// Reduce jump height if button released
-        //if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
-        //{
-        //    rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f); // Modify upward velocity
-        //}
-
-        Flip(); // Check and flip character direction
+        body = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y); // Apply movement
+        float horizontal = Input.GetAxis("Horizontal");
+        body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
+
+        if (horizontal < 0.01f)
+            transform.localScale = new Vector3(1, 1, 1);
+        else if (horizontal < -0.01f)
+            transform.localScale = new Vector3(-1, 1, 1);
+
+        if (Input.GetButtonDown("Jump") && grounded)
+            Jump();
     }
 
-    private bool IsGrounded()
+    private void Jump()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer); // Check if grounded
+            body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
+            grounded = false;
     }
 
-    private void Flip()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Flip character if direction changes
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
-        {
-            isFacingRight = !isFacingRight; // Toggle facing direction
-            Vector3 localScale = transform.localScale; // Get current scale
-            localScale.x *= -1f; // Flip the x scale
-            transform.localScale = localScale; // Apply new scale
-        }
+        if (collision.gameObject.CompareTag("Ground"))
+            grounded = true;
     }
+
+
 }
