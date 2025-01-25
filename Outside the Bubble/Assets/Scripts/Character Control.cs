@@ -39,7 +39,12 @@ public class PlayerMovement2D : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
         }
-
+        if (isTouchingWall && !isGrounded)
+        {
+            horizontalInput = 0;
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        }
+            
         // Debug log for wall detection
         Debug.Log($"Touching Wall: {isTouchingWall}");
 
