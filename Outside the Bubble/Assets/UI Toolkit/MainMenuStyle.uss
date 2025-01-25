@@ -1,0 +1,16 @@
+.header {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    font-size: 30px;
+    width: 300px;
+    height: 80px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    align-self: center;
+    background-image: url("project://database/Assets/Pixel%20art%20Menu%20package%20(5%20sets)/fancy%20metal/border.png?fileID=21300000&guid=fb4a12af3b204a5459da286a3a46b09f&type=3#border");
+}
