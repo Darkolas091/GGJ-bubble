@@ -75,4 +75,9 @@ public class PlayerMovement2D : MonoBehaviour
             Gizmos.DrawWireCube(wallCheck.position, wallCheckSize);
         }
     }
+
+    private void Awake()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }
