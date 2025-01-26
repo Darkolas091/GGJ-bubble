@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ground
   - Platform
+  - WallEnd
+  - Item
+  - TargetArea
+  - Pressure1
   layers:
   - Default
   - TransparentFX
@@ -15,8 +19,8 @@ TagManager:
   - UI
   - Ground
   - Platform
-  - 
-  - 
+  - Item
+  - TargetArea
   - 
   - 
   - 
@@ -45,3 +49,4 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+  - Layer 1
