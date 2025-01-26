@@ -82,6 +82,7 @@ public class PlayerInteraction : MonoBehaviour
                 tree4.SetActive(true);
                 Quest2.SetActive(false);
                 End1.SetActive(true);
+                End2.SetActive(true);
             }
 
         }
