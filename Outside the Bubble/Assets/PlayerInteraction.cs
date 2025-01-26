@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -6,6 +7,12 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private GameObject tree2;
     [SerializeField] private GameObject tree3;
     [SerializeField] private GameObject tree4;
+    [SerializeField] private GameObject Quest1;
+    [SerializeField] private TextMeshProUGUI Word1;
+    [SerializeField] private GameObject Quest2;
+    [SerializeField] private GameObject End1;
+    [SerializeField] private GameObject End2;
+
     private GameObject heldItem;
     private int useCount = 0;  
 
@@ -60,16 +67,21 @@ public class PlayerInteraction : MonoBehaviour
             {
                 tree1.SetActive(false);
                 tree2.SetActive(true);
+                Quest1.SetActive(true);
             }
             if (useCount == 2)
             {
+                Quest1.SetActive(false);
                 tree2.SetActive(false);
                 tree3.SetActive(true);
+                Quest2.SetActive(true);
             }
             if (useCount == 3)
             {
                 tree3.SetActive(false);
                 tree4.SetActive(true);
+                Quest2.SetActive(false);
+                End1.SetActive(true);
             }
 
         }
