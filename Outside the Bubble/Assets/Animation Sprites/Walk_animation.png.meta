@@ -1,37 +1,40 @@
 fileFormatVersion: 2
-guid: 9ee9f9bd91fd14247be68130111136b8
+guid: c3c5035578fd9a647bad6227ca85aeb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2489995406762454079
-    second: Push_box_animation_0
+      213: -3783174710173025695
+    second: Walk_animation_0
   - first:
-      213: -8612245143466393182
-    second: Push_box_animation_1
+      213: -5917342367414498966
+    second: Walk_animation_1
   - first:
-      213: 7141573182823725055
-    second: Push_box_animation_2
+      213: 7045880071497873235
+    second: Walk_animation_2
   - first:
-      213: 7360976587570931259
-    second: Push_box_animation_3
+      213: -3000397768876015607
+    second: Walk_animation_3
   - first:
-      213: -2723016866314890083
-    second: Push_box_animation_4
+      213: -5053613545815974949
+    second: Walk_animation_4
   - first:
-      213: 7629121582919326997
-    second: Push_box_animation_5
+      213: -416090227637899342
+    second: Walk_animation_5
   - first:
-      213: -1897328150558176961
-    second: Push_box_animation_6
+      213: 8271563938432217321
+    second: Walk_animation_6
   - first:
-      213: 5420380774250740206
-    second: Push_box_animation_7
+      213: -3756027707563451461
+    second: Walk_animation_7
   - first:
-      213: -749031923763494490
-    second: Push_box_animation_8
+      213: -3440620193126085661
+    second: Walk_animation_8
   - first:
-      213: 8146394231823355649
-    second: Push_box_animation_9
+      213: 601862935133261533
+    second: Walk_animation_9
+  - first:
+      213: -1704183936522124340
+    second: Walk_animation_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,265 +156,243 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Push_box_animation_0
+      name: Walk_animation_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
+        x: 75
+        y: 766
+        width: 97
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c3d19fbe52c17dd0800000000000000
-      internalID: -2489995406762454079
+      spriteID: 16a35ec25a67f7bc0800000000000000
+      internalID: -3783174710173025695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_1
+      name: Walk_animation_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
+        x: 348
+        y: 766
+        width: 70
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a14a11fba82b7880800000000000000
-      internalID: -8612245143466393182
+      spriteID: a69c3efd77061eda0800000000000000
+      internalID: -5917342367414498966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_2
+      name: Walk_animation_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
+        x: 581
+        y: 766
+        width: 92
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff7f9abd8f6fb1360800000000000000
-      internalID: 7141573182823725055
+      spriteID: 35772a7289ef7c160800000000000000
+      internalID: 7045880071497873235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_3
+      name: Walk_animation_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
+        x: 831
+        y: 766
+        width: 102
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b36e12ec431772660800000000000000
-      internalID: 7360976587570931259
+      spriteID: 900454140227c56d0800000000000000
+      internalID: -3000397768876015607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_4
+      name: Walk_animation_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 68
+        y: 511
+        width: 112
+        height: 239
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9457e55696e53ad0800000000000000
-      internalID: -2723016866314890083
+      spriteID: bdb59895145fdd9b0800000000000000
+      internalID: -5053613545815974949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_5
+      name: Walk_animation_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 338
+        y: 510
+        width: 106
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51d1c2aa8a510e960800000000000000
-      internalID: 7629121582919326997
+      spriteID: 2bfa12b7420c93af0800000000000000
+      internalID: -416090227637899342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_6
+      name: Walk_animation_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 604
+        y: 510
+        width: 71
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3981ab79165ba5e0800000000000000
-      internalID: -1897328150558176961
+      spriteID: 9e0fe2fc39f7ac270800000000000000
+      internalID: 8271563938432217321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_7
+      name: Walk_animation_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 256
+        x: 855
+        y: 510
+        width: 75
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee97294889f093b40800000000000000
-      internalID: 5420380774250740206
+      spriteID: bbbd72443b8efdbc0800000000000000
+      internalID: -3756027707563451461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_8
+      name: Walk_animation_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 83
+        y: 255
+        width: 79
+        height: 239
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a146a21f67ea95f0800000000000000
-      internalID: -749031923763494490
+      spriteID: 3eb0fadd9267040d0800000000000000
+      internalID: -3440620193126085661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_9
+      name: Walk_animation_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 330
+        y: 255
+        width: 105
+        height: 239
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10f4f14746ecd0170800000000000000
-      internalID: 8146394231823355649
+      spriteID: dde8714962f3a5800800000000000000
+      internalID: 601862935133261533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Push_box_animation_10
+      name: Walk_animation_10
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 587
+        y: 254
+        width: 97
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a0720dfedaaf6b345bc95b43bfea076b
-      internalID: 26032037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Push_box_animation_11
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3e0d61510d183546ae8115c19ab740c
-      internalID: 585919784
+      spriteID: cc30ca72db58958e0800000000000000
+      internalID: -1704183936522124340
       vertices: []
       indices: 
       edges: []
@@ -420,7 +401,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b2afedbf64498d148b407647bbeacb0b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -429,19 +410,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Push_box_animation_0: -2489995406762454079
-      Push_box_animation_1: -8612245143466393182
-      Push_box_animation_10: 26032037
-      Push_box_animation_11: 585919784
-      Push_box_animation_2: 7141573182823725055
-      Push_box_animation_3: 7360976587570931259
-      Push_box_animation_4: -2723016866314890083
-      Push_box_animation_5: 7629121582919326997
-      Push_box_animation_6: -1897328150558176961
-      Push_box_animation_7: 5420380774250740206
-      Push_box_animation_8: -749031923763494490
-      Push_box_animation_9: 8146394231823355649
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

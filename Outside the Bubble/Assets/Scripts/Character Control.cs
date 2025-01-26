@@ -20,6 +20,7 @@ public class PlayerMovement2D : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isTouchingWall;
+    public Animator animator;
 
     private void Start()
     {
@@ -30,6 +31,8 @@ public class PlayerMovement2D : MonoBehaviour
     {
         // Handle horizontal movement
         float horizontalInput = Input.GetAxis("Horizontal");
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
 
         // Check if touching a wall
         isTouchingWall = Physics2D.OverlapBox(wallCheck.position, wallCheckSize, 0f, wallLayer);
@@ -44,7 +47,23 @@ public class PlayerMovement2D : MonoBehaviour
             horizontalInput = 0;
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
         }
-            
+
+        //Player flip left and right
+        if (horizontalInput > 0f)
+        {
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+            transform.localScale = new Vector2(-1f, 1f);
+        }
+        else if (horizontalInput < 0f)
+        {
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+            transform.localScale = new Vector2(1f, 1f);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
+
         // Debug log for wall detection
         Debug.Log($"Touching Wall: {isTouchingWall}");
 
@@ -56,7 +75,11 @@ public class PlayerMovement2D : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            //animator.SetBool("isJumping", true);
+            animator.SetTrigger("isJumping");
         }
+
+   
     }
 
     private void OnDrawGizmosSelected()

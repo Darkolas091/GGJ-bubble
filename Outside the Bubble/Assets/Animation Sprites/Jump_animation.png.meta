@@ -145,6 +145,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -152,10 +165,10 @@ TextureImporter:
       name: Jump_animation_0
       rect:
         serializedVersion: 2
-        x: 97
-        y: 767
-        width: 66
-        height: 253
+        x: 0
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +187,10 @@ TextureImporter:
       name: Jump_animation_1
       rect:
         serializedVersion: 2
-        x: 329
-        y: 551
-        width: 98
-        height: 217
+        x: 256
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +209,10 @@ TextureImporter:
       name: Jump_animation_2
       rect:
         serializedVersion: 2
-        x: 349
-        y: 767
-        width: 70
-        height: 239
+        x: 512
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +231,10 @@ TextureImporter:
       name: Jump_animation_3
       rect:
         serializedVersion: 2
-        x: 586
-        y: 767
-        width: 87
-        height: 202
+        x: 768
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,10 +253,10 @@ TextureImporter:
       name: Jump_animation_4
       rect:
         serializedVersion: 2
-        x: 586
-        y: 568
-        width: 95
-        height: 200
+        x: 0
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,10 +275,10 @@ TextureImporter:
       name: Jump_animation_5
       rect:
         serializedVersion: 2
-        x: 865
-        y: 767
-        width: 66
-        height: 250
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,10 +297,10 @@ TextureImporter:
       name: Jump_animation_6
       rect:
         serializedVersion: 2
-        x: 87
-        y: 524
-        width: 86
-        height: 242
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,10 +319,10 @@ TextureImporter:
       name: Jump_animation_7
       rect:
         serializedVersion: 2
-        x: 842
-        y: 537
-        width: 88
-        height: 215
+        x: 768
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +341,10 @@ TextureImporter:
       name: Jump_animation_8
       rect:
         serializedVersion: 2
-        x: 62
-        y: 255
-        width: 99
-        height: 223
+        x: 0
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,10 +363,10 @@ TextureImporter:
       name: Jump_animation_9
       rect:
         serializedVersion: 2
-        x: 324
-        y: 255
-        width: 93
-        height: 229
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,10 +385,10 @@ TextureImporter:
       name: Jump_animation_10
       rect:
         serializedVersion: 2
-        x: 595
-        y: 255
-        width: 78
-        height: 239
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +407,10 @@ TextureImporter:
       name: Jump_animation_11
       rect:
         serializedVersion: 2
-        x: 865
-        y: 255
-        width: 64
-        height: 249
+        x: 768
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,10 +429,10 @@ TextureImporter:
       name: Jump_animation_12
       rect:
         serializedVersion: 2
-        x: 97
+        x: 0
         y: 0
-        width: 66
-        height: 252
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,7 +451,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4a6e3dfa4fd2b9048b6aa1ff5201d851
     internalID: 0
     vertices: []
     indices: 
