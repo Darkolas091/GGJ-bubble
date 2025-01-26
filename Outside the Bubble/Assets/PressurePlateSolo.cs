@@ -14,8 +14,8 @@ public class PressurePlateSolo : MonoBehaviour
 
     [SerializeField] private float _maxDownDistance = 0.1f;
 
-    public GameObject targetObject;
-    public GameObject targetObject2;
+    [SerializeField] private GameObject targetObject;
+    [SerializeField] private GameObject targetObject2;
 
 
 
@@ -45,16 +45,16 @@ public class PressurePlateSolo : MonoBehaviour
             _spriteRenderer.color = Color.green;
 
 
-            targetObject = GameObject.Find("BridgeUP");
-            targetObject2 = GameObject.Find("BridgeDOWN");
-            if (targetObject != null )
+            if (targetObject != null)
             {
+                Debug.Log("UP not null");
                 targetObject.SetActive(false);
-            }
-            if (targetObject2 != null )
-            {
                 targetObject2.SetActive(true);
+                Debug.Log("DOWN active");
             }
+
+        
+    
         }
 
     }

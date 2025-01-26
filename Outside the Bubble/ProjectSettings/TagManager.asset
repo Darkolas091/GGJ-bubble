@@ -9,6 +9,7 @@ TagManager:
   - WallEnd
   - Item
   - TargetArea
+  - Pressure1
   layers:
   - Default
   - TransparentFX

@@ -8,14 +8,17 @@ public class PressurePlate : MonoBehaviour
 
     private Vector3 _originalPos;
 
-    private bool _isPressed;
+    public bool _isPressed;
 
     private SpriteRenderer _spriteRenderer;
 
-
     [SerializeField] private float _maxDownDistance = 0.1f;
 
-    public GameObject targetObject;
+    [SerializeField] private GameObject targetObject;
+
+    [SerializeField] private PressurePlateDuoLeft otherPressurePlate;
+
+    
 
 
 
@@ -28,6 +31,7 @@ public class PressurePlate : MonoBehaviour
 
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
+
     }
 
 
@@ -37,7 +41,6 @@ public class PressurePlate : MonoBehaviour
     {
 
         if (other.CompareTag("Player"))
-
         {
 
             _isPressed = true;
@@ -45,36 +48,59 @@ public class PressurePlate : MonoBehaviour
             _spriteRenderer.color = Color.green;
 
 
-            targetObject = GameObject.Find("WallEnd");
             if (targetObject != null)
             {
-                targetObject.SetActive(false);
-            }
-            else
-            {
-                Debug.LogError("No object  was found!");
+                if (otherPressurePlate._isPressed2 == true)
+                {
+                    targetObject.SetActive(false);
+                }
             }
         }
+        else if (other.CompareTag("Platform"))
+        {
+            _isPressed = true;
+
+            _spriteRenderer.color = Color.green;
+
+            if (targetObject != null)
+            {
+                if(otherPressurePlate._isPressed2 == true)
+                {
+                    targetObject.SetActive(false);
+                }
+            }
+        }
+        else if(otherPressurePlate._isPressed2 == true)
+        {
+            targetObject.SetActive(false);
+        }
+
 
     }
 
 
 
-    //private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
 
-    //{
+    {
 
-    //    if (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
 
-    //    {
+        {
 
-    //        _isPressed = false;
+            _isPressed = false;
 
-    //        _spriteRenderer.color = Color.red;
+            _spriteRenderer.color = Color.red;
 
-    //    }
+        }
+        else if (other.CompareTag("Platform"))
+        {
+            _isPressed = false;
 
-    //}
+            _spriteRenderer.color = Color.red;
+        }
+
+    }
 
 
 
