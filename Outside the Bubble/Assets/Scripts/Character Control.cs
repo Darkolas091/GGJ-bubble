@@ -46,7 +46,7 @@ public class PlayerMovement2D : MonoBehaviour
         }
             
         // Debug log for wall detection
-        Debug.Log($"Touching Wall: {isTouchingWall}");
+        //Debug.Log($"Touching Wall: {isTouchingWall}");
 
         // Check if the player is grounded
         isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer) ||
