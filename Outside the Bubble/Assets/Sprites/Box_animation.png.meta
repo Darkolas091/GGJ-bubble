@@ -460,7 +460,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Box_animation_0: 6552287386975681335
+      Box_animation_1: 2576076330141238318
+      Box_animation_10: -5612379161764233177
+      Box_animation_11: 5638204062857751670
+      Box_animation_12: 654802341463312795
+      Box_animation_2: 956425542723055808
+      Box_animation_3: 368880139629382958
+      Box_animation_4: -7649672904843052456
+      Box_animation_5: 4711916648198943946
+      Box_animation_6: 1008378285972820825
+      Box_animation_7: -6136823575646792072
+      Box_animation_8: 6071655120445888019
+      Box_animation_9: -8427147214560882704
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
